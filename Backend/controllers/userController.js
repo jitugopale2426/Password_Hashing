@@ -2,6 +2,7 @@ import { prismaClient } from "../routes/userRoute.js";
 import { hashSync } from "bcrypt";
 import bcrypt from "bcrypt";
 
+//Create User
 export const CreateUser = async (req, res) => {
   const { name, email, password } = req.body;
 
